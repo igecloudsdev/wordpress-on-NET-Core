@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (web)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/app/bin/Debug/net6.0/app.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/app/bin/Debug/net6.0/",
+            "console": "internalConsole",
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "stopAtEntry": false,
+            "launchBrowser": {
+                "enabled": true
+            },
+            "internalConsoleOptions": "openOnSessionStart",
+            "justMyCode": false,
+            "symbolOptions": {
+                // "searchPaths": ["C:\\Users\\jmise\\Projects\\peachpie\\src\\Peachpie.Library\\bin\\Debug\\netstandard2.0"],
+                "searchMicrosoftSymbolServer": false
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}
